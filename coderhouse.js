@@ -2,7 +2,6 @@ alert ("Bienvenido a la creacion de un producto")
 
 
 let precio =prompt ("ingresa un precio")
-let precioHtml = ducument.getElementById('precio')
 function solicitarValor() {
   precio = Number(prompt("Ingrese el valor a simular"));
   while (isNaN(precio) || "" == precio) {
@@ -11,4 +10,5 @@ function solicitarValor() {
   return precio;
 }
 solicitarValor();
+let precioHtml = ducument.getElementById('precio')
 precioHtml.innerHTML ="El numero ingresado es" + precio;
